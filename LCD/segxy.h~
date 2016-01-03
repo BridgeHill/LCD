@@ -1,0 +1,22 @@
+#ifndef SEGXY_H
+#define SEGXY_H
+#include <QStandardItemModel>
+#include <QTableView>
+
+class SegXY_Table
+{
+public:
+    explicit SegXY_Table(QObject *parrent = 0);
+    ~SegXY_Table();
+
+private:
+    class SegXY_Table *SegXY;
+    QStandardItemModel *ModelSeg_XY;
+    QTableView *ViewSeg_XY;
+    int LcdComSum;
+    int LcdPinSum;
+    int LcdSegSum;
+};
+
+#endif // SEGXY_H
+
