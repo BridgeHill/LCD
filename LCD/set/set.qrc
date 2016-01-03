@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>meterlcd.bmp</file>
+    </qresource>
+    <qresource prefix="/xml">
+        <file>lcdini.xml</file>
+    </qresource>
+</RCC>

@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     QFile testfile(DIR_IMG);
     if(!testfile.open(QIODevice::ReadOnly | QIODevice::Text))
     {
-        qDebug() << "Failed to open files";
+        qDebug() << "Failed to open files DIR_IMG";
         return -11;
     }
     if((xmlPosX<0)||(xmlPosY<0)||(xmlComCtr<=0)||(xmlPinCtr<=0))

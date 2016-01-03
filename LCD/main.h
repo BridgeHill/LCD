@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#define LCD_XML_DIR ("d:/lcdini.xml")//配置文件路径
+#define LCD_XML_DIR (":/xml/lcdini.xml")//配置文件路径
 
 #include <QDomDocument>
 #include <QDomElement>
@@ -15,7 +15,7 @@ void LoadXML(QString &DIR_IMG,int &PosX,int &PosY,int &ComCtr,int &PinCtr)
     QFile xmlfile(LCD_XML_DIR);
     if(!xmlfile.open(QIODevice::ReadOnly | QIODevice::Text))
     {
-        qDebug() << "Failed to open files";
+        qDebug() << "Failed to open files LCD_XML_DIR";
         return ;
     }
     QDomDocument LcdIni;

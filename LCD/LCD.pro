@@ -37,4 +37,4 @@ FORMS    += \
     pad.ui
 
 RESOURCES += \
-    bmp.qrc
+    set/set.qrc

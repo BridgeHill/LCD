@@ -165,7 +165,7 @@ void Lcd::on_actionSave_triggered()
             }
             Segments.appendChild(Segment);
         }
-    QFile xmlfile("D:/lcdini.xml");
+    QFile xmlfile(":/xml/lcdini.xml");
     if(!xmlfile.open(QIODevice::WriteOnly | QIODevice::Text))
     {
         qDebug() << "Failed to open file for writing";
@@ -219,10 +219,10 @@ void Lcd::on_pushButton_clicked()
 void Lcd::on_actionLoad_triggered()
 {
     //打开文件用于读取xml
-    QFile xmlfile("D:/lcdini.xml");
+    QFile xmlfile(":/xml/lcdini.xml");
     if(!xmlfile.open(QIODevice::ReadOnly | QIODevice::Text))
     {
-        qDebug() << "Failed to open files";
+        qDebug() << "Failed to open files xml";
         return ;
     }
     QDomDocument LcdIni;
